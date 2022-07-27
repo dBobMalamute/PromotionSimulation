@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>QML/Martell1996Controls.qml</file>
+        <file>QML/RemovePersonAnimationSquare.qml</file>
+        <file>QML/PromotePersonAnimationSquare.qml</file>
+        <file>QML/NewHireAnimationSquare.qml</file>
+        <file>Images/NewHires.png</file>
+        <file>Images/GreenerPastures.png</file>
+        <file>Icons/Martell1996Simulation.png</file>
+        <file>Icons/Martell1996DataDisplay.png</file>
+        <file>QML/Martell1996Controls2.qml</file>
+        <file>QML/ModifiedMartellGroup.qml</file>
+        <file>QML/ModifiedMartellGroupMinimized.qml</file>
+        <file>QML/ModifiedMartell.qml</file>
+        <file>QML/ModifiedMartellPieChartPath.qml</file>
+        <file>QML/ModifiedMartellPieChartKey.qml</file>
+        <file>QML/ModifiedMartellPyramidSetup.qml</file>
+        <file>QML/ModifiedMartellDataDisplay.qml</file>
+        <file>QML/RemovePersonAnimationCircle.qml</file>
+        <file>QML/NewHireAnimationCircle.qml</file>
+        <file>Icons/ModifiedMartellSimulation.png</file>
+        <file>Icons/ModifiedMartellGroup.png</file>
+        <file>Icons/ModifiedMartellDataDisplay.png</file>
+        <file>ExampleMutts/ModifiedMartell.mutt</file>
+        <file>QML/ModifiedMartellPersonDot.qml</file>
+        <file>QML/Martell1996Controls3.qml</file>
+    </qresource>
+</RCC>
