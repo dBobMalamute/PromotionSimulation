@@ -24,7 +24,7 @@ public:
     void onNewDataIn(std::shared_ptr<DataType> dataType, PlugNumber plugNumber) override;
 
 signals:
-    void displayAveragePromotionCycles(double cycles);
+    void displayAveragePromotionCycles(double cycles, double stdev);
     void displayNumberRuns(int numRuns);
 
 private:

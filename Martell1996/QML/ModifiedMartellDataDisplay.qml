@@ -154,15 +154,17 @@ Rectangle
         Text
         {
             id: promotionCyclesText
+            textFormat: Text.RichText;
             anchors.centerIn: parent;
             visible: idea.valid;
         }
         Connections
         {
             target: idea
-            function onDisplayAveragePromotionCycles(cycles)
+            function onDisplayAveragePromotionCycles(cycles, stdev)
             {
-                promotionCyclesText.text = "Average Promotion Cycles: " + cycles.toFixed(2);
+                promotionCyclesText.text = "Average Promotion Cycles: " + cycles.toFixed(2) +
+                        " &#177;" + stdev.toFixed(2);
             }
         }
     }

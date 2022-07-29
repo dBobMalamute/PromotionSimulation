@@ -129,12 +129,16 @@ void ModifiedMartellDataDisplayIdea::prepareData()
 
     //Promotion Cycles
     double averagePromotionCycles = 0.0;
+    double ex2 = 0.0;
     for(int i = 0; i < runsData.length(); i++)
     {
         averagePromotionCycles += runsData[i].promotionCycles();
+        ex2 += runsData[i].promotionCycles()*runsData[i].promotionCycles();
     }
     averagePromotionCycles /= runsData.length();
-    emit displayAveragePromotionCycles(averagePromotionCycles);
+    ex2 /= runsData.length();
+    double stdevCycles = std::sqrt(ex2 - averagePromotionCycles * averagePromotionCycles);
+    emit displayAveragePromotionCycles(averagePromotionCycles, stdevCycles);
 
     //Number of runs used to calculate the data
     emit displayNumberRuns(runsData.length());
