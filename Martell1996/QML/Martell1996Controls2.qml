@@ -50,7 +50,7 @@ Rectangle
             {
                 id: runsTextInput;
                 anchors.verticalCenter: parent.verticalCenter
-                validator: IntValidator{bottom: 1; top: 999}
+                validator: IntValidator{bottom: 1; top: 99999}
                 color: ControlsStyle.textColor();
                 font: ControlsStyle.textFont();
                 selectByMouse: true;
