@@ -165,7 +165,7 @@ void ModifiedMartellDataDisplayIdea::prepareData()
     outputString.append(" +- ");
     outputString.append(QString::number(stdevCycles));
     outputString.append("\n");
-    outputString.append("Data from: ");
+    outputString.append("Data from ");
     outputString.append(QString::number(runsData.length()));
     outputString.append(" simulation runs.");
     emit displayTextForCopying(outputString);
