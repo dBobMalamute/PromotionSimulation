@@ -5,7 +5,7 @@ import QtQuick.Controls 2.12
 Rectangle
 {
     width: 370
-    height: 387
+    height: 414
     color: "#cccccc"
 
     Rectangle
@@ -186,6 +186,30 @@ Rectangle
             function onDisplayNumberRuns(runs)
             {
                 numberRunsText.text = "Data from " + runs.toFixed(0) + " simulation runs.";
+            }
+        }
+    }
+    Rectangle
+    {
+        y: 386
+        height: 28
+        color: "#ececec"
+        width: parent.width
+        visible: idea.valid
+        clip: true
+        TextEdit
+        {
+            id: copyTextEdit
+            readOnly: true;
+            selectByMouse: true
+
+            Connections
+            {
+                target: idea
+                function onDisplayTextForCopying(str)
+                {
+                    copyTextEdit.text = str;
+                }
             }
         }
     }

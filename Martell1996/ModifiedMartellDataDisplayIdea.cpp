@@ -142,6 +142,33 @@ void ModifiedMartellDataDisplayIdea::prepareData()
 
     //Number of runs used to calculate the data
     emit displayNumberRuns(runsData.length());
+
+    // Setup the string for copying.
+    QString outputString = "Level, Incumbent's Mean Score, Stdev, Number of Positions, Percentage of Women, Stdev\n";
+    for(int i = 0; i < numLevels; i++)
+    {
+        outputString.append(QString::number(numLevels - i));
+        outputString.append(",");
+        outputString.append(QString::number(averageScore[i]));
+        outputString.append(",");
+        outputString.append(QString::number(averageScoreErr[i]));
+        outputString.append(",");
+        outputString.append(QString::number(positionsAtlevel.at(i)));
+        outputString.append(",");
+        outputString.append(QString::number(averagePercentWomen[i]));
+        outputString.append(",");
+        outputString.append(QString::number(averagePercentWomenErr[i]));
+        outputString.append("\n");
+    }
+    outputString.append("Average promotion Cylces: ");
+    outputString.append(QString::number(averagePromotionCycles));
+    outputString.append(" +- ");
+    outputString.append(QString::number(stdevCycles));
+    outputString.append("\n");
+    outputString.append("Data from: ");
+    outputString.append(QString::number(runsData.length()));
+    outputString.append(" simulation runs.");
+    emit displayTextForCopying(outputString);
 }
 
 

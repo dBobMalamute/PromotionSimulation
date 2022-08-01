@@ -26,6 +26,7 @@ public:
 signals:
     void displayAveragePromotionCycles(double cycles, double stdev);
     void displayNumberRuns(int numRuns);
+    void displayTextForCopying(QString text);
 
 private:
     std::weak_ptr<ModifiedMartellDataType> m_input;
