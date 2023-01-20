@@ -6,6 +6,7 @@ Although observed gender differences in employee performance ratings tend to be 
 We encourage people to extend the simulation we conducted using the simulation code or browser interface provided here. Regarding replication, this repository contains all code necessary to run the computational model and replicate the simulations/results reported in the paper (ADD LINK)
 <br>
 Run simulation in Browser: (https://dbobmalamute.github.io/PromotionSimulation/WR/index.html).
+Instructional Video: (https://youtu.be/SfVBMzW_4L4)
 <br>
 <br>
 This repository contains all code necessary to run the computational model and replicate the simulations/results reported in the paper (ADD LINK)
@@ -15,9 +16,6 @@ All code is provided under the MIT LICENSE and may be freely manipulated and dis
 <br>
 Any feedback to make improvements or fix errors in the code, simulation, or video, and any suggestions for extending this simulation in the future are all very much appreciated and useful. However, we cannot provide technical guidance or support with installing software or adapting any portions of the provided code.
 
-<h1>Demonstrations</h1>
-
-TODO ADD VIDEOS
 
 
 
